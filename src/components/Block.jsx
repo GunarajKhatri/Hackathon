@@ -1,11 +1,13 @@
 export default function Block(props) {
   return (
-    <div className="h-full bg-white w-64  shadow-md cursor-pointer rounded-xl hover:bg-slate-50 hover:shadow-2xl">
-      <div className="flex justify-between h-14">
-        <h1 className=" text-3xl font-semibold pl-3 p-4">{props.Data.label}</h1>
-        <props.Data.list className="text-5xl cursor-pointer mr-1 my-3  ml-4  " />
+   
+
+    <div className="bg-white h-[173px] w-[300px] mb-6 shadow-md cursor-pointer rounded-xl hover:bg-slate-50 hover:shadow-lg">
+      <div className="flex justify-between">
+        <h1 className=" text-4xl font-semibold pl-3 p-4">{props.Data.label}</h1>
+        <props.Data.list className="text-5xl cursor-pointer mr-3 my-3  ml-4  " />
       </div>
-      <div className="text-gray-500">
+      <div className="text-gray-500 mt-2">
         <p className="pl-3">{props.Data.text}</p>
       </div>
 

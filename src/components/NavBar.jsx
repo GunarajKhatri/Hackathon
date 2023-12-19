@@ -7,8 +7,8 @@ import { FaReact } from "react-icons/fa6";
 import { GoGraph } from "react-icons/go";
 import NavItem from "./Navitems";
 import Block from "./Block";
-import Orders from "./Orders";
 import Card from "./Card";
+import Chart from "./Orders";
 
 export default function NavBar({ label, icon }) {
   const navOptions = [
@@ -50,34 +50,34 @@ export default function NavBar({ label, icon }) {
       list: MdProductionQuantityLimits,
     },
   ];
+
+  
   return (
     <>
       <div className="flex">
-        <div className="h-screen p-5 pt-8  font-sans flex-col">
+        <div className="h-screen p-5 pt-8  font-sans flex-col flex-w">
           <div className="flex mb-8">
             <FaReact className="text-6xl mr-2" />
             <h1 className="font-bold text-xl pt-4">React</h1>
           </div>
 
-          <div className=" w-40">
+          <div className="w-28 md:w-44">
             {navOptions.map((item) => {
               return <NavItem data={item} />;
             })}
           </div>
         </div>
 
-        <div className="w-full">
-          <div className="flex justify-between mt-6 ml-9 mr-20 ">
-            <p className="ml-3 text-lg">Welcome Back, Deepak</p>
-          </div>
-
-          <div className="flex justify-between mr-20 h-40 mt-8 ml-9">
-            {BlockBar.map((items) => {
+        <div className="w-full mr-20">
+          <p className="mt-5 ml-9  text-2xl md:text-4xl">Welcome Back, Deepak</p>
+        <div className="flex flex-wrap mt-6 ml-10 mr-20 justify-between ">
+        {BlockBar.map((items) => {
               return <Block Data={items} />;
             })}
-          </div>
-          <Orders />
-          <Card />
+
+        </div>
+        <Chart/>
+        <Card/>
         </div>
       </div>
     </>
