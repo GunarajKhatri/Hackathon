@@ -13,9 +13,9 @@ export default function Chart() {
       {
         label:"First Dataset",
         data:[10, 20, 30, 42, 51, 82, 31, 59, 61, 73, 91, 58],
-        // backgroundColor:'#fff',
+        // backgroundColor:'#fafafa',
         borderColor:'blue',
-        tension:0.9,
+        tension:0.1,
         fill:true,
         pointStyle:'rect',
         pointBorderColor:'blue',
@@ -26,12 +26,12 @@ export default function Chart() {
   })
   return (
     <>
-     <div className='ml-10 mt-8 flex-col flex-wrap shadow-md mr-20 rounded-lg h-[540px] bg-white '>
-    <div><p className='text-3xl ml-5 font font-semibold'>orders</p></div>
-    <div className="App" style={{width:'1000px', height:'800px'}}>
-      <Line data={data}></Line>
-    </div>
-    </div>
+     <div className='ml-10 mt-8 flex-col flex-wrap  mr-20 rounded-lg h-[540px] bg-white '>
+         <div><p className='text-3xl ml-5 font font-semibold'>Orders</p></div>
+         <div className="App  shadow-md mb-4" style={{width:'1300px', height:'505px'}}>
+                 <Line data={data}></Line>
+          </div>
+      </div>
     </>
   );
 }
