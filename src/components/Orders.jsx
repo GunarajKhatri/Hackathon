@@ -26,9 +26,8 @@ export default function Chart() {
   })
   return (
     <>
-     <div className='ml-10 mt-8 flex-col flex-wrap  mr-20 rounded-lg h-[540px] bg-white '>
-         <div><p className='text-3xl ml-5 font font-semibold'>Orders</p></div>
-         <div className="App  shadow-md mb-4" style={{width:'1300px', height:'505px'}}>
+     <div className='flex justify-center items-center  mt-4 h-[350px] shadow-md bg-white '>
+         <div className="App  mb-4" style={{width:'705px', height:'350px'}}>
                  <Line data={data}></Line>
           </div>
       </div>

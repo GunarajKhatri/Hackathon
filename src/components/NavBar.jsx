@@ -54,29 +54,34 @@ export default function NavBar({ label, icon }) {
   
   return (
     <>
-      <div className="flex">
-        <div className="h-screen p-5 pt-8 pr-16  font-sans flex-col flex-w">
+      <div className="flex overflow-hidden">
+        <div className="min-h-screen w-1/5  flex-col p-5 pt-8 pr-[120px]">
           <div className="flex mb-8">
             <FaReact className="text-6xl mr-2" />
             <h1 className="font-semibold text-4xl pt-4">React</h1>
           </div>
 
-          <div className="w-36">
+          <div>
             {navOptions.map((item,index) => {
               return <NavItem key={index} data={item} />;
             })}
           </div>
         </div>
 
-        <div className="w-full flex-col flex-wrap mr-20">
-          <p className="mt-5 ml-9  text-2xl md:text-4xl">Welcome Back, Deepak</p>
-        <div className="flex flex-wrap mt-6 ml-10 mr-20 justify-between ">
+        <div className="flex-col w-4/5">
+          <div className="mt-5 mr-20">
+          <p className="text-2xl">Welcome Back, Deepak</p>
+          </div>
+        <div className="max-w-full flex mt-6 mr-20 justify-between">
         {BlockBar.map((items,index) => {
               return <Block key={index} Data={items} />;
             })}
 
         </div>
+        <div className="mr-20">
+        <div className=" mt-3"><p className='text-2xl ml-5 font font-md'>Orders</p></div>
         <Chart/>
+        </div>
         <Card/>
         </div>
       </div>

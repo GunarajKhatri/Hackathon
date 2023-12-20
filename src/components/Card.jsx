@@ -76,14 +76,14 @@ const Card = () => {
   
   return (
     <>
-      <div className="flex-col ml-9 mr-20  h-[341px] mb-3 mt-8">
+      <div className="flex-col h-[340px] mb-6 mt-4 mr-20">
         <div className="mb-4">
-            <p className="text-3xl font-semibold">Products</p>
+            <p className="text-2xl font-medium py-2">Products</p>
           </div>
         <div className="flex">
-        <div className="flex w-[800px] mr-14 rounded-lg shadow-md">
-          <div className="max-h-full  w-[180px] mt-4 pl-4">
-          <p className="text-2xl font-semibold ">products</p>
+        <div className="flex w-[800px] mr-14 rounded-lg shadow-md bg-white">
+          <div className="min-h-full  w-[180px] mt-1 pl-4">
+          <p className="text-lg font-semibold ">Products</p>
           <div className="mt-2 bg-white">
             {
               Products.map((currentData,index)=>{
@@ -93,7 +93,7 @@ const Card = () => {
           </div>
           
           </div>
-           <div className=" flex-col w-[550px] ml-6 mt-4">
+           <div className=" flex-col w-[550px] ml-4 mt-1">
               <div className="inline-flex">
                 {
                   Demands.map((currentData,index)=>{
@@ -106,7 +106,7 @@ const Card = () => {
           </div>
         </div>
 
-        <div className=" w-[450px]  shadow-md ">
+        <div className=" w-[450px] bg-white shadow-md ">
           <p>Channels</p>
           <div>Go</div>
         </div>

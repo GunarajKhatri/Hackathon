@@ -4,10 +4,8 @@ const Items = (props) => {
   return (
     <>
     <div>
-        <p className='text-lg mt-3'>{props.Data.products}</p>
+        <p className='text-lg mt-2 mb-1'>{props.Data.products}</p>
     </div>
-
-      
     </>
   )
 }

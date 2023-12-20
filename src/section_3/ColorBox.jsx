@@ -8,7 +8,7 @@ const ColorBox = () => {
   },
   {
     color:"green",
-    width:500
+    width:520
   },
   {
     color:"gray",
@@ -16,7 +16,7 @@ const ColorBox = () => {
   },
   {
     color:"brown",
-    width:277
+    width:275
   },
   {
     color:"blue",
@@ -35,13 +35,13 @@ const ColorBox = () => {
 // const [Data,setData]=useState(Colors)
    
  return (
-  <div className='flex-col'>
+  <div className='flex-col ml-1 mr-4 mt-2'>
    {Colors.map((currentData, index) => (
         <div
-        className="mt-4 py-3 rounded-r-xl"
+        className="mt-4 mb-1 pl-4 rounded-r-xl"
           key={index}
           style={{
-            width: `${(currentData.width / 530) * 100}%`,
+            width: `${(currentData.width / 520) * 100}%`,
             backgroundColor: currentData.color,
             height: "19px",
           }}
