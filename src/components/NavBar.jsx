@@ -79,7 +79,7 @@ export default function NavBar({ label, icon }) {
 
         </div>
         <div className="mr-20">
-        <div className=" mt-3"><p className='text-2xl ml-5 font font-md'>Orders</p></div>
+        <div className=" mt-3"><p className='text-2xl font font-md'>Orders</p></div>
         <Chart/>
         </div>
         <Card/>

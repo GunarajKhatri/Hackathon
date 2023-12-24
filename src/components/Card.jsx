@@ -2,6 +2,7 @@ import React from "react";
 import Items from "../section_3/Items";
 import Numbers from "../section_3/Numbers";
 import ColorBox from "../section_3/ColorBox";
+import Piechart from "../section_3/Pie_Chart";
 
 const Card = () => {
 
@@ -76,13 +77,13 @@ const Card = () => {
   
   return (
     <>
-      <div className="flex-col h-[340px] mb-6 mt-4 mr-20">
+      <div className="flex-col mt-6">
         <div className="mb-4">
-            <p className="text-2xl font-medium py-2">Products</p>
+            <p className="text-2xl font-md py-2">Products</p>
           </div>
         <div className="flex">
-        <div className="flex w-[800px] mr-14 rounded-lg shadow-md bg-white">
-          <div className="min-h-full  w-[180px] mt-1 pl-4">
+        <div className="flex w-[65%] mr-6 rounded-lg shadow-md bg-white">
+          <div className=" w-[180px] mt-1 pl-4">
           <p className="text-lg font-semibold ">Products</p>
           <div className="mt-2 bg-white">
             {
@@ -106,9 +107,8 @@ const Card = () => {
           </div>
         </div>
 
-        <div className=" w-[450px] bg-white shadow-md ">
-          <p>Channels</p>
-          <div>Go</div>
+        <div className="bg-white shadow-md">
+          <Piechart/>
         </div>
       </div>
       </div>
