@@ -19,7 +19,7 @@ function Piechart()
        }
        set(sChannels);
        setDemands(sDemands);
-        //console.log(resData); 
+       
        }
 
     getChannelData();
@@ -32,7 +32,7 @@ function Piechart()
                 
                 <Chart 
                 type="pie"
-                width={400}
+                width={380}
                 height={400}
 
                 series={ Demands }                
@@ -41,7 +41,6 @@ function Piechart()
                         title:{ text:""
                         } , 
                        noData:{text:"Empty Data"},                        
-                      // colors:["#f90000","#f0f"],
                       labels:Channels                    
 
                  }}

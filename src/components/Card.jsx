@@ -77,13 +77,13 @@ const Card = () => {
   
   return (
     <>
-      <div className="flex-col mt-6">
+      <div className="flex-col mt-6 mb-6">
         <div className="mb-4">
             <p className="text-2xl font-md py-2">Products</p>
           </div>
         <div className="flex">
-        <div className="flex w-[65%] mr-6 rounded-lg shadow-md bg-white">
-          <div className=" w-[180px] mt-1 pl-4">
+        <div className="flex w-[60%] mr-6 rounded-lg shadow-md bg-white">
+          <div className=" w-[190px] mt-1 pl-4">
           <p className="text-lg font-semibold ">Products</p>
           <div className="mt-2 bg-white">
             {
@@ -107,7 +107,7 @@ const Card = () => {
           </div>
         </div>
 
-        <div className="bg-white shadow-md">
+        <div className=" w-[380px] rounded-md shadow-md">
           <Piechart/>
         </div>
       </div>
