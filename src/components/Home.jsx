@@ -45,7 +45,7 @@ export default function Home({ label, icon }) {
   
   return (
     <>
-      <div className="flex overflow-hidden">
+      <div className="flex overflow-hidden bg-slate-100">
         <NavBar/>
 
         <div className="flex-col w-4/5">
