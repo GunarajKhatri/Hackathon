@@ -5,15 +5,34 @@ import { TbBorderStyle2 } from "react-icons/tb";
 import { RiHome2Line } from "react-icons/ri";
 import { RiWechatChannelsFill } from "react-icons/ri";
 import { MdProductionQuantityLimits } from "react-icons/md";
-
+import { useState } from 'react';
+const navOption = [
+  { id:1,label: "Dashboard", isActive:true, path:"/dashboard" ,icon: RiHome2Line },
+  {id:2, label: "Product", isActive:false,path:"/products" , icon: MdProductionQuantityLimits },
+  { id:3,label: "Orders", isActive:false, path:"/orders" ,icon: TbBorderStyle2 },
+  { id:4,label: "Channels", isActive:false,path:"/channels",icon: RiWechatChannelsFill },
+];
 
 const NavBar = () => {
-     const navOptions = [
-    { label: "Dashboard", isActive: "true", icon: RiHome2Line },
-    { label: "Product", isActive: "true", icon: MdProductionQuantityLimits },
-    { label: "Orders", isActive: "true", icon: TbBorderStyle2 },
-    { label: "Channels", isActive: "true", icon: RiWechatChannelsFill },
-  ];
+  
+  const [navOptions,SetNavOPtions]=useState(navOption);
+  const updatenav=(i)=>{
+    const updatenavs = navOptions.map(n => {
+      if (n.id != i) {
+        return {
+          ...n,
+          isActive:false,
+        };
+      } else { 
+        return {
+          ...n,
+          isActive:true,
+        };
+      }
+    });
+   
+    SetNavOPtions(updatenavs);
+  }
   return (
     <>
          <div className="min-h-screen w-1/5  flex-col p-5 pt-8 pr-[120px]">
@@ -24,7 +43,7 @@ const NavBar = () => {
 
           <div>
             {navOptions.map((item,index) => {
-              return <NavItem key={index} data={item} />;
+              return <NavItem key={index} data={item} update={updatenav} />;
             })}
           </div>
         </div>

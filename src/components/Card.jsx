@@ -107,7 +107,7 @@ const Card = () => {
           </div>
         </div>
 
-        <div className=" w-[380px] rounded-md shadow-md bg-white">
+        <div className=" w-[380px] rounded-md shadow-md">
           <Piechart/>
         </div>
       </div>

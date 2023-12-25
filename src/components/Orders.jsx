@@ -26,8 +26,8 @@ export default function Chart() {
   })
   return (
     <>
-     <div className='flex justify-center items-center  mt-4 h-[370px] shadow-md bg-white '>
-         <div className="App mt-4" style={{width:'705px', height:'350px'}}>
+     <div className='flex justify-center items-center  mt-4 h-[350px] shadow-md bg-white '>
+         <div className="App  mb-4" style={{width:'705px', height:'350px'}}>
                  <Line data={data}></Line>
           </div>
       </div>
