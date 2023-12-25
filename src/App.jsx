@@ -1,9 +1,23 @@
+import { useEffect } from "react";
+import { Outlet, useLocation } from "react-router-dom";
 import "./App.css";
-import Home from "./components/Home";
+import NavBar from "./components/Home";
+import { useNavigate } from "react-router-dom";
+
 function App() {
+const location=useLocation();
+const navigate = useNavigate();
+  useEffect(()=>{
+if(location.pathname=="/"){
+navigate("/dashboard");
+}
+  },[navigate,location]);
   return (
-    <>
-      <Home />
+      <>
+    <div className="flex overflow-hidden">
+      <NavBar/>
+      <Outlet />
+    </div>
     </>
   );
 }
