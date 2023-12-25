@@ -35,10 +35,10 @@ const NavBar = () => {
   }
   return (
     <>
-         <div className="min-h-screen w-1/5  flex-col p-5 pt-8 pr-[120px]">
+         <div className="min-h-screen w-72  flex-col p-5 pt-8 pr-[120px]">
           <div className="flex mb-8">
             <FaReact className="text-6xl mr-2" />
-            <h1 className="font-semibold text-4xl pt-4">React</h1>
+            <h1 className="font-semibold text-2xl pt-4">Agastya</h1>
           </div>
 
           <div>

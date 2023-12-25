@@ -60,8 +60,9 @@ const Products = () => {
               <p className="text-2xl">Welcome Back, Deepak</p>
             </div>
           
-            <div className='flex bg-gray-200 mt-20 rounded-md w-[80%] shadow-sm hover:bg-gray-300 hover:border border-black'>
-                <CiSearch className='text-5xl py-3 px-1 text-gray-500 rounded-md'/>
+            <div className='flex bg-gray-200 mt-20 rounded-md w-[80%] shadow-sm hover:border border-black'>
+                <CiSearch className='text-5xl py-3 text-gray-500 rounded-md'/>
+                <p className='text-slate-500 mt-[10px] mr-2 text-md'>|</p>
                 <input
                       className="bg-gray-200 w-[100%] outline-none text-gray-500 rounded-md "
                       type="text"
