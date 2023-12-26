@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import "./App.css";
-import NavBar from "./components/Home";
+import Layout from "./components/Layout";
 import { useNavigate } from "react-router-dom";
 
 function App() {
@@ -15,7 +15,7 @@ navigate("/dashboard");
   return (
       <>
     <div className="flex overflow-hidden">
-      <NavBar/>
+      <Layout/>
       <Outlet />
     </div>
     </>

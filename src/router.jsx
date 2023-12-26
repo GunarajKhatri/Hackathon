@@ -1,11 +1,11 @@
 
-
 import { createBrowserRouter, Navigate } from "react-router-dom";
-import Products from "./Products";
-import Order from "./Order";
-import Channels from "./Channels";
-import Dashboard from "./Dashboard";
+import Products from "./pages/Products";
+import Order from "./pages/Order";
+import Channels from "./pages/Channels";
+import Dashboard from "./pages/Dashboard";
 import App from "./App";
+
 
 
 
